@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sagar32/my-socket.git"
+    "url": "https://github.com/mahidonda/socket-chat.git"
   },
   "author": "Sagar Chopada",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sagar32/my-socket/issues"
+    "url": "https://github.com/mahidonda/socket-chat/issues"
   },
-  "homepage": "https://github.com/sagar32/my-socket#readme",
+  "homepage": "https://github.com/mahidonda/socket-chat#readme",
   "dependencies": {
     "express": "^4.15.2",
     "socket.io": "^1.7.3"

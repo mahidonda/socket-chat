@@ -9,6 +9,7 @@ app.get("/",function(req,res){
 });
 
 io.sockets.on('connection',function(socket){
+	
 		socket.on('test',function(data){
 			io.sockets.emmit('reciveTest',data+" from server..");
 		});
