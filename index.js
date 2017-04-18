@@ -13,12 +13,13 @@ io.sockets.on('connection',function(socket){
 	
 	
 	socket.on('newUser',function(data){
+		socket.username=data;
 		io.sockets.emit('joinUser',data+ " Is Join Chat..!");
 	});
 
 
 	//disconnect user
 	socket.on('disconnect',function(data){
-		
+		io.sockets.emit('leaveUser',socket.username+ " Is Leave Chat..!");
 	});
 });
