@@ -12,8 +12,8 @@ app.get("/",function(req,res){
 io.sockets.on('connection',function(socket){
 	
 	
-	socket.on('sendData',function(data){
-		io.sockets.emit('testRecive',data+ " from server..!");
+	socket.on('newUser',function(data){
+		io.sockets.emit('joinUser',data+ " Is Join Chat..!");
 	});
 
 
